@@ -800,13 +800,26 @@ img {
 }
 
 .txt-accept-blue {
-  text-decoration: underline;
   padding: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3333;
   letter-spacing: 0.04em;
   color: var(--pb-color);
+  cursor: pointer;
+
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size var(--time-of-transition)
+    var(--cubic-of-transition);
+}
+
+.txt-accept-blue:hover,
+.txt-accept-blue:focus {
+  background-size: 100% 1px;
 }
 
 .modal-btn {
