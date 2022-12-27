@@ -593,7 +593,7 @@ img {
 
   min-width: 408px;
   min-height: 579px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -630,7 +630,6 @@ img {
 }
 
 .modal-title {
-  margin-top: 48px;
   margin-bottom: 16px;
 
   font-weight: 600;
@@ -646,6 +645,11 @@ img {
   margin-bottom: 8px;
 }
 
+.form-field-txtarea {
+  flex-direction: column;
+  display: block;
+}
+
 .form-field label {
   display: block;
   margin-bottom: 4px;
@@ -656,7 +660,27 @@ img {
   color: var(--subtxt-color);
 }
 
+.form-field-txtarea label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+  color: var(--subtxt-color);
+}
+
 .form-field input {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px 8px 33px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border var(--time-of-transition) var(--cubic-of-transition);
+}
+
+.form-field-txtarea input {
   width: 360px;
   height: 40px;
   padding: 8px 16px 8px 33px;
@@ -685,6 +709,10 @@ img {
   transition: fill var(--time-of-transition) var(--cubic-of-transition);
 }
 
+.form-input {
+  display: block;
+}
+
 .form-input:focus {
   border: 1px solid var(--pb-color);
 }
@@ -693,7 +721,7 @@ img {
   fill: var(--pb-color);
 }
 
-.form-field textarea {
+.form-field-txtarea textarea {
   width: 360px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -703,7 +731,7 @@ img {
   transition: border var(--time-of-transition) var(--cubic-of-transition);
 }
 
-.form-field textarea::placeholder {
+.form-field-txtarea textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1666;
@@ -713,7 +741,7 @@ img {
 
 .form-checkbox {
   display: flex;
-  margin-top: 8px;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 
@@ -772,6 +800,7 @@ img {
 }
 
 .txt-accept-blue {
+  text-decoration: underline;
   padding: 0;
   font-weight: 400;
   font-size: 12px;

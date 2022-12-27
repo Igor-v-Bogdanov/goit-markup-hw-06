@@ -472,7 +472,7 @@
         <div class="form-field">
           <label for="username">Name</label>
           <div class="for-position-icon">
-            <input type="text" class="form-input" name="username" />
+            <input id="username" type="text" class="form-input" name="username" />
             <svg class="input-icon">
               <use href="./images/sprite.svg#name"></use>
             </svg>
@@ -482,7 +482,7 @@
         <div class="form-field">
           <label for="phone">Phone</label>
           <div class="for-position-icon">
-            <input type="tel" class="form-input" name="phone" />
+            <input id="phone" type="tel" class="form-input" name="phone" />
             <svg class="input-icon">
               <use href="./images/sprite.svg#phone"></use>
             </svg>
@@ -492,16 +492,17 @@
         <div class="form-field">
           <label for="e-mail"> Email</label>
           <div class="for-position-icon">
-            <input type="email" class="form-input" name="e-mail" />
+            <input id="e-mail" type="email" class="form-input" name="e-mail" />
             <svg class="input-icon">
               <use href="./images/sprite.svg#email"></use>
             </svg>
           </div>
         </div>
 
-        <div class="form-field">
+        <div class="form-field-txtarea">
           <label for="comment">Comment</label>
           <textarea
+            id="comment"
             class="form-input"
             name="comment"
             rows="6"
@@ -517,7 +518,7 @@
             class="input-checkbox"
           />
           <span class="modal-custom-chkbx">
-            <svg class="modal-custom-icon" width="10" heifht="8">
+            <svg class="modal-custom-icon" width="10" height="8">
               <use href="./images/sprite.svg#click"></use>
             </svg>
           </span>
